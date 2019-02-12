@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" name="payaraArtifactr3:EJB exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/payaraArtifactr3_EJB_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="payaraArtifactr3/ejb/EJB" />
+      <element id="module-output" name="payaraArtifactr3" />
+    </root>
+  </artifact>
+</component>
