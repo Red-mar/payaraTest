@@ -3,6 +3,11 @@ package model.logic;
 import javax.persistence.*;
 
 @Entity
+@NamedQueries({
+        @NamedQuery(name = "person.findOne", query = "select p from PersonDO p where p.id = :id"),
+        @NamedQuery(name = "person.getAll", query = "select p from PersonDO p")
+}
+)
 @Table(name="person")
 public class PersonDO {
 

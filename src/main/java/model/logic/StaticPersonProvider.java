@@ -1,5 +1,6 @@
 package com.icecreamstand.model.logic;
 
+import interceptor.MyInterceptor;
 import model.logic.PersonDO;
 import model.logic.PersonProvider;
 import org.hibernate.Session;
@@ -11,32 +12,33 @@ import java.util.List;
 import javax.ejb.Init;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.interceptor.Interceptor;
+import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
+@Interceptors(MyInterceptor.class)
 @Stateless
 public class StaticPersonProvider implements PersonProvider {
-
-    private ArrayList<PersonDO> personList;
 
     @PersistenceContext
     private EntityManager em;
 
-    public void initialise(){
-        personList = new ArrayList<>();
-        personList.add(new PersonDO(1, "test"));
-        personList.add(new PersonDO(2, "test2"));
+    @Override
+    public PersonDO getPersonById(int id) {
+        return em.createNamedQuery("person.findOne", PersonDO.class).setParameter("id", id).getSingleResult();
     }
 
     @Override
-    public PersonDO getPersonById(int id) {
-        PersonDO result = null;
-        result = new PersonDO();
-        result.setName("hibernater");
-        //em.createNativeQuery("DROP TABLE PERSON").executeUpdate();
-        //em.createNativeQuery("CREATE TABLE PERSON").executeUpdate();
-        em.persist(result);
-        return result;
+    public List<PersonDO> getAllPerson() {
+        return em.createNamedQuery("person.getAll", PersonDO.class).getResultList();
+    }
+
+    @Override
+    public void createPerson(String name) {
+        PersonDO person = new PersonDO();
+        person.setName(name);
+        em.persist(person);
     }
 
     @Override

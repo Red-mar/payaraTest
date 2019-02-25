@@ -1,0 +1,12 @@
+model/logic/JaxRsActivator.class
+model/logic/PersonRest.class
+model/facade/HelloWorld.class
+model/facade/MyFacade.class
+model/logic/PersonHandler.class
+interceptor/MyInterceptor.class
+model/logic/PersonProvider.class
+controller/SecondPageController.class
+model/logic/PersonDO.class
+controller/CreatePersonController.class
+com/icecreamstand/model/logic/StaticPersonProvider.class
+controller/HelloController.class
