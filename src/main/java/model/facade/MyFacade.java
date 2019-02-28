@@ -1,5 +1,6 @@
 package model.facade;
 
+import com.gmail.kunicins.olegs.libshout.Libshout;
 import com.icecreamstand.model.logic.StaticPersonProvider;
 import model.logic.PersonDO;
 import model.logic.PersonProvider;
@@ -20,7 +21,6 @@ public class MyFacade {
     public void init() {
 
     }
-
 
     public PersonDO getPersonById(int id) {
         return pp.getPersonById(id);

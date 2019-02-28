@@ -21,7 +21,6 @@ public class CreatePersonController extends HttpServlet {
         String name = req.getParameter("name");
 
         try {
-            System.out.println("starting stream");
             facade.createPerson(name);
 
             req.getRequestDispatcher("/WEB-INF/person.jsp").forward(req, resp);
