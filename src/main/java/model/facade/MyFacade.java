@@ -1,7 +1,5 @@
 package model.facade;
 
-import com.gmail.kunicins.olegs.libshout.Libshout;
-import com.icecreamstand.model.logic.StaticPersonProvider;
 import model.logic.PersonDO;
 import model.logic.PersonProvider;
 
