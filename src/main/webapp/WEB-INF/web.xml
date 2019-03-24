@@ -5,4 +5,24 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected resources</web-resource-name>
+            <url-pattern>/api/sample/write</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>ADMIN</role-name>
+            <role-name>USER</role-name>
+        </auth-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name/>
+        <web-resource-collection>
+            <web-resource-name>Admin resources</web-resource-name>
+            <url-pattern>/api/sample/delete</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>ADMIN</role-name>
+        </auth-constraint>
+    </security-constraint>
 </web-app>

@@ -1,22 +1,20 @@
 package model.logic;
 
 import interceptor.MyInterceptor;
-import model.logic.PersonDO;
-import model.logic.PersonProvider;
-import model.logic.RoleDO;
-import org.hibernate.Session;
-import org.hibernate.Transaction;
+import io.jsonwebtoken.impl.crypto.MacProvider;
 
-import java.util.ArrayList;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-import javax.ejb.Init;
-import javax.ejb.Local;
 import javax.ejb.Stateless;
-import javax.interceptor.Interceptor;
 import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
+import static model.logic.Constants.ADMIN;
 
 @Interceptors(MyInterceptor.class)
 @Stateless
@@ -32,31 +30,41 @@ public class StaticPersonProvider implements PersonProvider {
 
     @Override
     public List<PersonDO> getAllPerson() {
+
         return em.createNamedQuery("person.getAll", PersonDO.class).getResultList();
     }
 
     @Override
-    public void createPerson(String name) {
-        PersonDO person = new PersonDO();
-        person.setName(name);
-        person.setPassword("test");
-        person.setUsername("testname");
-/*        List<RoleDO> roleList = new ArrayList<RoleDO>();
+    public void createPerson(String name, String username, String password, String role) {
+        
+        try {
+            PersonDO person = new PersonDO();
+            person.setName(name);
 
-        RoleDO dRole = new RoleDO("Default");
-        RoleDO aRole = new RoleDO("Admin");
-        roleList.add(dRole);
-        roleList.add(aRole);
+            MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+            messageDigest.update(password.getBytes());
+            String encryptedString = new String(messageDigest.digest());
 
-        person.setRoles(roleList);
-*/
-//        em.persist(dRole);
-//        em.persist(aRole);
-        em.persist(person);
+            person.setPassword(encryptedString);
+            person.setUsername(username);
+            person.setRole(role);
+
+            em.persist(person);
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+        
     }
 
     @Override
     public PersonDO getPersonByName(String name) {
         return null;
+    }
+
+    @Override
+    public PersonDO getPersonByUsername(String username) {
+        return em.createNamedQuery("person.getByUsername", PersonDO.class)
+                .setParameter("username", username)
+                .getSingleResult();
     }
 }

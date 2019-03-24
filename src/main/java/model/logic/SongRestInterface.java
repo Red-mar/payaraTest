@@ -8,5 +8,4 @@ public interface SongRestInterface {
     List<SongDO> GetAllSongs();
     void DeleteSongById(int id);
     void AddSong(SongDO songDO);
-    SongDO GetSongByName(String name);
 }

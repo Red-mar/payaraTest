@@ -10,7 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @WebServlet("/second")
 public class SecondPageController extends HttpServlet {
@@ -21,9 +24,7 @@ public class SecondPageController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         try {
-            List<PersonDO> personList = facade.getAllPersons();
-
-            req.setAttribute("personList", personList);
+            req.setAttribute("personList", facade.getAllPersons());
 
             req.getRequestDispatcher("/WEB-INF/second.jsp").forward(req, resp);
         } catch (Exception e) {

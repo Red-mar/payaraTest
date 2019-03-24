@@ -7,7 +7,9 @@ import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
 import java.io.*;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Singleton
 public class MyFacade {
@@ -24,7 +26,17 @@ public class MyFacade {
         return pp.getPersonById(id);
     }
 
-    public void createPerson(String name) { pp.createPerson(name);}
+    public String getExpectedPassword(String username) {
+        return pp.getPersonByUsername(username).getPassword();
+    }
+
+    public Set<String> getGroupsByUsername(String username) {
+        Set<String> set = new HashSet<String>();
+        set.add(pp.getPersonByUsername(username).getRole().toString());
+        return set;
+    }
+
+    public void createPerson(String name, String username, String password, String role) { pp.createPerson(name, username, password, role);}
 
     public List<PersonDO> getAllPersons() { return pp.getAllPerson();}
 }

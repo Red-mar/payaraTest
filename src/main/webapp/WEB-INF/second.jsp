@@ -17,6 +17,9 @@
 <ul>
     <c:forEach items="${personList}" var="person">
         <li>${person.name}</li>
+        <li>${person.username}</li>
+        <li>${person.password}</li>
+        <li>${person.role}</li>
     </c:forEach>
 </ul>
 
