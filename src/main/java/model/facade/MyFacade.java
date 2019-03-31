@@ -39,4 +39,8 @@ public class MyFacade {
     public void createPerson(String name, String username, String password, String role) { pp.createPerson(name, username, password, role);}
 
     public List<PersonDO> getAllPersons() { return pp.getAllPerson();}
+
+    public boolean deletePersonById(int id) {
+        return pp.deletePersonById(id);
+    }
 }

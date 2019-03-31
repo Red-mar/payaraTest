@@ -8,9 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.client.ClientBuilder;
 import java.io.IOException;
 
-import static model.logic.Constants.USER;
+import static security.Constants.ADMIN;
 
 @WebServlet("/person")
 public class CreatePersonController extends HttpServlet {
@@ -25,11 +26,13 @@ public class CreatePersonController extends HttpServlet {
         String register_pw = req.getParameter("register_pw");
 
         try {
-            facade.createPerson(name, register_user, register_pw, USER);
+            facade.createPerson(name, register_user, register_pw, ADMIN);
 
             req.getRequestDispatcher("/WEB-INF/person.jsp").forward(req, resp);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+
 }

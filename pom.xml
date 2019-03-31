@@ -60,6 +60,18 @@
       <version>${version.jsonwebtoken}</version>
     </dependency>
 
+    <dependency>
+      <groupId>fish.payara.extras</groupId>
+      <artifactId>payara-micro</artifactId>
+      <version>5.184</version>
+    </dependency>
+    <dependency>
+      <groupId>fish.payara.api</groupId>
+      <artifactId>payara-api</artifactId>
+      <version>5.184</version>
+      <scope>provided</scope>
+    </dependency>
+
 
 
     <!--   <dependency>

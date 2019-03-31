@@ -11,4 +11,5 @@ public interface PersonProvider {
     PersonDO getPersonByUsername(String username);
     void createPerson(String name, String username, String password, String role);
     List<PersonDO> getAllPerson();
+    boolean deletePersonById(int id);
 }

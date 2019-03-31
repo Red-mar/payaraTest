@@ -67,4 +67,14 @@ public class StaticPersonProvider implements PersonProvider {
                 .setParameter("username", username)
                 .getSingleResult();
     }
+
+    @Override
+    public boolean deletePersonById(int id) {
+        try {
+            em.remove(getPersonById(id));
+            return true;
+        } catch (Exception e) {
+            return false;
+        }
+    }
 }
