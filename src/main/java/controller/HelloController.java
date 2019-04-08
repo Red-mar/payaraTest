@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.Random;
 
-@WebServlet("")
+@WebServlet("/hello")
 public class HelloController extends HttpServlet {
 
     @EJB
@@ -23,7 +23,7 @@ public class HelloController extends HttpServlet {
 
         req.setAttribute("helloMessage", "Hello from helloController.");
 
-        req.getRequestDispatcher("WEB-INF/index.jsp").forward(req, resp);
+        req.getRequestDispatcher("WEB-INF/indexx.jsp").forward(req, resp);
     }
 
 }

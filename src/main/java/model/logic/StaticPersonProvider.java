@@ -1,20 +1,18 @@
 package model.logic;
 
 import interceptor.MyInterceptor;
-import io.jsonwebtoken.impl.crypto.MacProvider;
 
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.util.HashSet;
+import java.util.Base64;
 import java.util.List;
-import java.util.Set;
 
 import javax.ejb.Stateless;
 import javax.interceptor.Interceptors;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-
-import static model.logic.Constants.ADMIN;
+import javax.xml.bind.DatatypeConverter;
 
 @Interceptors(MyInterceptor.class)
 @Stateless
@@ -42,10 +40,10 @@ public class StaticPersonProvider implements PersonProvider {
             person.setName(name);
 
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
-            messageDigest.update(password.getBytes());
-            String encryptedString = new String(messageDigest.digest());
+            byte[] hash = messageDigest.digest(password.getBytes(StandardCharsets.UTF_8));
+            String encoded = DatatypeConverter.printBase64Binary(hash);
 
-            person.setPassword(encryptedString);
+            person.setPassword(encoded);
             person.setUsername(username);
             person.setRole(role);
 

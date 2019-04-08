@@ -34,7 +34,11 @@ public class StreamFacade {
     }
 
     public boolean AddSongToDatabase(String name, String url) {
-        return streamProvider.AddSongToDatabase(new SongDO(name, url));
+        return streamProvider.AddSongToDatabase(new SongDO(name, url, false));
+    }
+
+    public boolean EditSong(SongDO songDO) {
+        return streamProvider.EditSong(songDO);
     }
 
     public void AddSongToQueue(SongDO song) {

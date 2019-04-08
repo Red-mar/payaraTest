@@ -4,6 +4,7 @@ import model.facade.StreamFacade;
 
 import javax.ejb.EJB;
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 import javax.ws.rs.*;
 import java.util.List;
 
@@ -11,36 +12,41 @@ import java.util.List;
 @Path("/song")
 public class SongRest implements SongRestInterface {
 
-    @EJB
+    @Inject
     private StreamFacade facade;
 
     @GET
     @Path("/{id}")
-    @Produces("text/plain")
     @Override
     public SongDO GetSongByID(@PathParam("id") int id) {
         return facade.GetSongById(id);
     }
 
     @GET
-    @Produces("text/plain")
     @Override
     public List<SongDO> GetAllSongs() {
         return facade.GetAllSongs();
     }
 
-    @DELETE
-    @Path("/{id}")
-    @Produces("text/plain")
+    @POST
     @Override
-    public void DeleteSongById(@PathParam("id") int id) {
-        //
+    public boolean EditSong(@FormParam("name") String name,
+                            @FormParam("url") String url,
+                            @FormParam("deleted") boolean isDeleted) {
+        return facade.EditSong(
+                new SongDO(
+                        name,
+                        url,
+                        isDeleted
+                )
+        );
     }
 
-    @PUT
+    @POST
     @Produces("text/plain")
     @Override
-    public void AddSong(SongDO song) {
-
+    public boolean AddSong(@FormParam("name") String name,
+                           @FormParam("url") String url) {
+        return facade.AddSongToDatabase(name, url);
     }
 }

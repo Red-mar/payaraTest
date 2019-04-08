@@ -6,12 +6,13 @@ import model.logic.PersonProvider;
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.ejb.Singleton;
+import javax.ejb.Stateless;
 import java.io.*;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-@Singleton
+@Stateless
 public class MyFacade {
 
     @EJB
@@ -25,6 +26,8 @@ public class MyFacade {
     public PersonDO getPersonById(int id) {
         return pp.getPersonById(id);
     }
+
+    public PersonDO getPersonByName(String username) { return pp.getPersonByUsername(username); }
 
     public String getExpectedPassword(String username) {
         return pp.getPersonByUsername(username).getPassword();

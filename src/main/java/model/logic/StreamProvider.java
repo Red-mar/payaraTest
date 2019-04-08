@@ -106,6 +106,17 @@ public class StreamProvider {
         return false;
     }
 
+    public boolean EditSong(SongDO songDO) {
+        try {
+            em.merge(songDO);
+            return true;
+        } catch (Exception e) {
+
+        }
+        return false;
+    }
+
+
     public void AddSongToQueue(SongDO song) {
         songQueue.add(song);
     }

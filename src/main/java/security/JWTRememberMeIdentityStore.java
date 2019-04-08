@@ -34,7 +34,8 @@
  * and therefore, elected the GPL Version 2 license, then the option applies
  * only if the new code is made subject to such option by the copyright
  * holder.
- */
+ *//*
+
 package security;
 
 import io.jsonwebtoken.ExpiredJwtException;
@@ -84,3 +85,4 @@ public class JWTRememberMeIdentityStore implements RememberMeIdentityStore {
     }
 
 }
+*/

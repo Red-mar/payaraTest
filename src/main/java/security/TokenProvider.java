@@ -78,6 +78,7 @@ public class TokenProvider {
                 .setSubject(username)
                 .claim(AUTHORITIES_KEY, authorities.stream().collect(joining(",")))
                 .signWith(SignatureAlgorithm.HS512, secretKey)
+                .setIssuedAt(new Date(now))
                 .setExpiration(new Date(now + validity))
                 .compact();
     }

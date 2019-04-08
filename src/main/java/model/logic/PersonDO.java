@@ -24,15 +24,17 @@ public class PersonDO {
     @Column(unique = true)
     private String username;
     private String password;
+    private boolean isDeleted;
 
     private String role;
 
-    public PersonDO(int id, String name, String username, String password, String role) {
+    public PersonDO(int id, String name, String username, String password, String role, boolean isDeleted) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.password = password;
         this.role = role;
+        this.isDeleted = isDeleted;
     }
 
     public PersonDO() {}
@@ -75,6 +77,14 @@ public class PersonDO {
 
     public void setRole(String role) {
         this.role = role;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.isDeleted = deleted;
     }
 }
 

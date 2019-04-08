@@ -16,10 +16,12 @@ public class SongDO {
     private int id;
     private String name;
     private String url;
+    private boolean isDeleted;
 
-    public SongDO(String name, String url) {
+    public SongDO(String name, String url, boolean isDeleted) {
         this.name = name;
         this.url = url;
+        this.isDeleted = isDeleted;
     }
 
     public SongDO() {
@@ -48,5 +50,13 @@ public class SongDO {
 
     public void setUrl(String url) {
         this.url = url;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        this.isDeleted = deleted;
     }
 }

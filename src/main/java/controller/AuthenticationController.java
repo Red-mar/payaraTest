@@ -1,6 +1,7 @@
 package controller;
 
 
+import javax.annotation.security.PermitAll;
 import javax.ejb.EJB;
 import javax.inject.Inject;
 import javax.json.Json;
@@ -23,6 +24,7 @@ public class AuthenticationController {
     private SecurityContext securityContext;
 
     @GET
+    @PermitAll
     @Path("login")
     public Response login() {
         LOGGER.log(Level.INFO, "login");

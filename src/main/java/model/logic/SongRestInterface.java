@@ -6,6 +6,6 @@ public interface SongRestInterface {
 
     SongDO GetSongByID(int id);
     List<SongDO> GetAllSongs();
-    void DeleteSongById(int id);
-    void AddSong(SongDO songDO);
+    boolean EditSong(String name, String url, boolean isDeleted);
+    boolean AddSong(String name, String url);
 }
