@@ -7,82 +7,110 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c7087e9-08ca-4c31-8184-e1ebca5b07e7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BeanValConstrainViolationExceptionMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/logic/LoginView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/admin/adminonly.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/error.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/user/useronly.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/model/BeanValConstrainViolationExceptionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/model/logic/LoginView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/BeanValConstrainViolationExceptionMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/LoginView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/glassfish-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/admin/adminonly.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/error.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/login.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/payaraArtifactr3/user/useronly.xhtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/libshout_java_2_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/libshout_java_2_2_2.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/HelloController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/PersonRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/PersonRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SecondPageController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/facade/MyFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/facade/MyFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/LoginView.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/SongDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/SongDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/SongRest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/SongRest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/SongRestInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/SongRestInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/security/AuthorizationIdentityStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/AuthorizationIdentityStore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/security/JWTRememberMeIdentityStore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/JWTRememberMeIdentityStore.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/security/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/security/TokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/indexx.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/indexx.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/admin/adminonly.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/error.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/login.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/user/useronly.xhtml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/CreatePersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/CreatePersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/CreatePersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/HelloController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/controller/PersonRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controller/PersonRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/controller/SecondPageController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/facade/MyFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/facade/MyFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/facade/StreamFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/facade/StreamFacade.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/CorsFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/CorsFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/LoginView.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/logic/PersonDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/PersonDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/SongDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/SongDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/SongRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/SongRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/SongRestInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/SongRestInterface.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/PersonProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/PersonProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/PersonRest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/logic/StaticPersonProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/StaticPersonProvider.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/logic/StreamProvider$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/StreamProvider$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/model/logic/StreamProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/logic/StreamProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/AuthenticationIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/AuthorizationIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/JWTAuthenticationMechanism.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/JWTRememberMeIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/security/TokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/security/TokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/AuthenticationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/AuthenticationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/CreatePersonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/CreatePersonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/HelloController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/PersonRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/PersonRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/MyFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/MyFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/StreamFacade.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/StreamFacade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongDO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongDO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRestInterface.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRestInterface.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StaticPersonProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StaticPersonProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StreamProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StreamProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/AuthenticationIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/AuthorizationIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/JWTAuthenticationMechanism.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/JWTRememberMeIdentityStore.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/TokenProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/TokenProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/indexx.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/libshout-java-2.2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/beans.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/META-INF/payaraArtifactr3.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/META-INF/persistence.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/AuthenticationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/CreatePersonController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/HelloController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/PersonRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/SecondPageController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/controller/StreamController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/interceptor/MyInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/BeanValConstrainViolationExceptionMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/HelloJava.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/MyFacade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/facade/StreamFacade.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/CorsFilter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/JaxRsActivator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/LoginView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/PersonRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongDO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/SongRestInterface.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StaticPersonProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StreamProvider$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/model/logic/StreamProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/Constants.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/JWTCredential.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/classes/security/TokenProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/glassfish-web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/indexx.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/byte-buddy-1.8.17.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/classmate-1.3.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/dom4j-2.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/hibernate-commons-annotations-5.0.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/hibernate-core-5.3.7.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/hibernate-entitymanager-5.3.7.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jackson-annotations-2.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jackson-core-2.8.9.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jackson-databind-2.4.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jandex-2.0.5.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/javassist-3.23.1-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/javax.activation-api-1.2.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/javax.persistence-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jjwt-0.6.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/payara-micro-5.184.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/lib/postgresql-42.2.5.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/person.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/second.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/stream.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/admin/adminonly.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/error.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/login.xhtml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/payaraArtifactr3/user/useronly.xhtml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -123,128 +151,162 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/SongRest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/PersonRestController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2703#2704#0" expanded="true" />
-                <element signature="e#2748#2749#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/indexx.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/person.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stream.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="32" selection-start-line="32" selection-end-line="36" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/second.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/PersonRestController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="298">
+                  <caret line="53" selection-start-line="53" selection-end-line="55" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/StreamRestController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-465">
+                  <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1424#1425#0" expanded="true" />
+                    <element signature="e#1467#1468#0" expanded="true" />
+                    <element signature="e#1549#1550#0" expanded="true" />
+                    <element signature="e#1589#1590#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-174">
+                  <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="66">
+                  <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0.1-b5/javaee-api-8.0.1-b5.jar!/javax/security/enterprise/credential/UsernamePasswordCredential.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTCredential.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="75">
+                  <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/controller/WebsocketController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="240">
+                  <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+                  <folding>
+                    <element signature="e#0#1491#0" expanded="true" />
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#1202#1728#0" expanded="true" />
+                    <element signature="e#1727#1728#0" expanded="true" />
+                    <element signature="e#2069#2070#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="226">
+                  <caret line="102" column="143" selection-start-line="102" selection-start-column="143" selection-end-line="102" selection-end-column="143" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/MyInterceptor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="60">
+                  <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/security/UsernamePasswordTwoFactorCredential.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="182">
+                  <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#639#640#0" expanded="true" />
+                    <element signature="e#670#671#0" expanded="true" />
+                    <element signature="e#717#718#0" expanded="true" />
+                    <element signature="e#755#756#0" expanded="true" />
+                    <element signature="e#706#707#0" expanded="true" />
+                    <element signature="e#738#739#0" expanded="true" />
+                    <element signature="e#769#770#0" expanded="true" />
+                    <element signature="e#796#797#0" expanded="true" />
+                    <element signature="e#660#661#0" expanded="true" />
+                    <element signature="e#697#698#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0.1-b5/javaee-api-8.0.1-b5.jar!/javax/security/enterprise/credential/UsernamePasswordCredential.class">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="37" selection-start-line="37" selection-end-line="39" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Jsp File" />
         <option value="Interface" />
         <option value="Enum" />
         <option value="cdi.beans_1_1" />
-        <option value="Jsp File" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>extract</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -252,57 +314,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/LoginBean.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/StreamController.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/JWTAuthenticationMechanism.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/TokenProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/security/Constants.java" />
-        <option value="$PROJECT_DIR$/src/main/java/security/JWTCredential.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/SampleController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongDO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongRestInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/security/TokenProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/BeanVal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/BeanValContrainViolationExceptionMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/JAAS/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/META-INF/glassfish.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/JAAS/error.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/JAAS/error.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/JAASController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/JAAS/login.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/JAAS/adminonly.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user/useronly.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.xhtml.html" />
-        <option value="$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9b8cc167-13fa-456c-b2e2-1fca6a9128c7/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/model/facade/myFacade.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/HelloController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/user/useronly.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/person.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/person.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/JaxRSActivator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/interceptor/MyInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/facade/HelloWorld.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/facade/HelloJava.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/StreamController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/stream.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java" />
+        <option value="$PROJECT_DIR$/src/test/RestTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/SongRestInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/RoleDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/JWTCredential.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/JWTAuthenticationMechanism.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/JWTRememberMeIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/AuthorizationIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/ROLE.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/TokenProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/AuthenticationIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/second.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/SecondPageController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/security/AuthorizationIdentityStore.java" />
         <option value="$PROJECT_DIR$/src/main/java/security/JWTRememberMeIdentityStore.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/admin/adminonly.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/LoginView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/facade/MyFacade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/indexx.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/login.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/PersonRestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/security/CustomWebAuthenticationDetailsSource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/security/CustomWebAuthenticationDetails.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/facade/MyFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/PersonRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/StreamRestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/WebsocketContrller.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/security/UsernamePasswordTwoFactorCredential.java" />
+        <option value="$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java" />
+        <option value="$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/WebsocketController.java" />
       </list>
     </option>
   </component>
@@ -311,7 +373,7 @@
     <option name="FILTER_WARNINGS" value="false" />
     <option name="FILTER_INFO" value="false" />
     <option name="FILTER_DEBUG" value="false" />
-    <option name="CUSTOM_FILTER" />
+    <option name="CUSTOM_FILTER" value="" />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -320,10 +382,10 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="width" value="964" />
-    <option name="height" value="1048" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="780" />
+    <option name="width" value="956" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -430,38 +492,7 @@
               <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
@@ -470,12 +501,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="payaraArtifactr3" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="payaraArtifactr3" type="b2602c69:ProjectViewProjectNode" />
@@ -489,34 +514,32 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite&#10;mysql&#10;h2&#10;postgresql" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554723772109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556198665492" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/git/libshout-java/target/libshout-java-2.2.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/libshout-java-2.2.2.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/react" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/faces" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/JAAS/admin" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/META-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -693,9 +716,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestTest" />
         <item itemvalue="Arquillian JUnit.GlassFish Embedded 3.1: RestTest.shouldSayHello" />
         <item itemvalue="JUnit.RestTest.testSend" />
-        <item itemvalue="JUnit.RestTest" />
         <item itemvalue="Arquillian JUnit.RestTest.facadeTest" />
       </list>
     </recent_temporary>
@@ -731,18 +754,16 @@
       <workItem from="1553069992669" duration="944000" />
       <workItem from="1553071192324" duration="7790000" />
       <workItem from="1553450141420" duration="2673000" />
-      <workItem from="1553452900837" duration="24283000" />
-      <workItem from="1554058765558" duration="31245000" />
-      <workItem from="1554208616966" duration="21000" />
-      <workItem from="1554374967792" duration="1106000" />
-      <workItem from="1554706325092" duration="5455000" />
+      <workItem from="1553452900837" duration="6279000" />
+      <workItem from="1555496988585" duration="3094000" />
+      <workItem from="1555609506106" duration="4558000" />
+      <workItem from="1555960187168" duration="4550000" />
+      <workItem from="1555966057568" duration="15207000" />
+      <workItem from="1556183023504" duration="13026000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestTest - 2019.02.25 at 11h 40m 52s.xml">
-      <configuration name="RestTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestTest - 2019.02.25 at 11h 57m 37s.xml">
       <configuration name="RestTest" configurationId="JUnit" />
     </history-entry>
@@ -770,9 +791,12 @@
     <history-entry file="GlassFish_Embedded_3_1__RestTest_shouldSayHello - 2019.02.25 at 21h 22m 03s.xml">
       <configuration name="GlassFish Embedded 3.1: RestTest.shouldSayHello" configurationId="ArquillianJUnit" />
     </history-entry>
+    <history-entry file="GlassFish_Embedded_3_1__RestTest_shouldSayHello - 2019.04.17 at 12h 34m 11s.xml">
+      <configuration name="GlassFish Embedded 3.1: RestTest.shouldSayHello" configurationId="ArquillianJUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166412000" />
+    <option name="totallyTimeSpent" value="151016000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -784,10 +808,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="964" height="1048" extended-state="0" />
+    <frame x="-4" y="0" width="1928" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.38183808" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.13951011" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" sideWeight="0.5007949" side_tool="true" weight="0.17929563" />
@@ -798,13 +822,13 @@
       <window_info id="EJB" order="8" side_tool="true" />
       <window_info id="Web" order="9" sideWeight="0.5007949" side_tool="true" weight="0.17929563" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.45010847" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32790697" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4994664" visible="true" weight="0.45986986" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.4989059" weight="0.329718" />
-      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4989059" weight="0.3286334" />
+      <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.4989059" weight="0.32790697" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.5314534" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.4989059" weight="0.34164858" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -819,12 +843,12 @@
       <window_info anchor="right" id="Maven" order="3" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="JSF" order="6" weight="0.6258206" />
-      <window_info anchor="right" id="Database" order="7" weight="0.51531726" />
+      <window_info anchor="right" id="JSF" order="6" />
+      <window_info anchor="right" id="Database" order="7" weight="0.5346113" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="CDI" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Bean Validation" order="11" weight="0.32960597" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49920508" visible="true" weight="0.32275712" />
@@ -874,236 +898,335 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java</url>
+          <line>127</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java</url>
+          <line>101</line>
+          <properties />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/JWTCredential.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/TokenProvider.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/Constants.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/JWTRememberMeIdentityStore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/AuthenticationIdentityStore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/AuthorizationIdentityStore.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SampleController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="40" column="47" lean-forward="true" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#935#936#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/SongRestInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-730">
-          <caret line="19" column="20" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3078#3079#0" expanded="true" />
-            <element signature="e#3165#3166#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0.1-b5/javaee-api-8.0.1-b5.jar!/javax/annotation/security/RolesAllowed.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="18" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/BeanValConstrainViolationExceptionMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SecondPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml.html" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="184" lean-forward="true" selection-start-line="184" selection-end-line="184" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9b8cc167-13fa-456c-b2e2-1fca6a9128c7/console.sql">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/SecondPageController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HelloController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="45">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="75" selection-start-line="7" selection-start-column="75" selection-end-line="7" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/second.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="101" selection-end-line="102" />
+        <state relative-caret-position="315">
+          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/AuthorizationIdentityStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="81" selection-end-line="82" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/Constants.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/person.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="45" column="50" selection-start-line="45" selection-start-column="40" selection-end-line="45" selection-end-column="50" />
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/security/TokenProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="79" column="62" selection-start-line="79" selection-start-column="62" selection-end-line="79" selection-end-column="62" />
+        <state relative-caret-position="-217">
+          <caret line="72" column="93" selection-start-line="72" selection-start-column="93" selection-end-line="72" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="15" column="85" selection-start-line="15" selection-start-column="85" selection-end-line="15" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/SongRest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/beans.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="42" />
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/user/useronly.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/CustomWebAuthenticationDetailsSource.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/CustomWebAuthenticationDetails.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/AuthorizationIdentityStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/admin/adminonly.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="46" selection-start-column="46" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="51" column="46" selection-start-line="51" selection-start-column="46" selection-end-line="51" selection-end-column="46" />
+        <state relative-caret-position="360">
+          <caret line="79" column="1" selection-start-line="79" selection-start-column="1" selection-end-line="79" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2919#2920#0" expanded="true" />
-            <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#3071#3072#0" expanded="true" />
-            <element signature="e#3136#3137#0" expanded="true" />
-            <element signature="e#3223#3224#0" expanded="true" />
+            <element signature="e#3204#3205#0" expanded="true" />
+            <element signature="e#3252#3253#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/JAASController.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="43" column="71" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
+        <state relative-caret-position="324">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2092#2093#0" expanded="true" />
+            <element signature="e#2121#2122#0" expanded="true" />
+            <element signature="e#2165#2166#0" expanded="true" />
+            <element signature="e#2201#2202#0" expanded="true" />
+            <element signature="e#2250#2251#0" expanded="true" />
+            <element signature="e#2290#2291#0" expanded="true" />
+            <element signature="e#2325#2326#0" expanded="true" />
+            <element signature="e#2356#2357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTRememberMeIdentityStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="35" selection-start-line="8" selection-start-column="35" selection-end-line="8" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/SongDO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="59" column="33" selection-start-line="59" selection-start-column="33" selection-end-line="59" selection-end-column="33" />
+        <state relative-caret-position="253">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/JDKLogger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
           <folding>
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1074#1075#0" expanded="true" />
+            <element signature="e#3269#3270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar!/org/jboss/logging/Logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="1241" selection-start-line="1241" selection-end-line="1241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/logging/BeanLogger_$logger.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="1417" column="22" selection-start-line="1417" selection-start-column="22" selection-end-line="1417" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/bean/proxy/ProxyMethodHandler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="45" column="18" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/serialization/AbstractSerializableHolder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#774#775#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/injection/ThreadLocalStack.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/bean/proxy/EnterpriseTargetBeanInstance.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="e#870#871#0" expanded="true" />
+            <element signature="e#897#898#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/jboss/weld/ejb/spi/helpers/ForwardingEjbDescriptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+          <folding>
+            <element signature="e#1352#1353#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/glassfish/weld/ejb/EjbDescriptorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="109" column="19" selection-start-line="109" selection-start-column="19" selection-end-line="109" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/fish/payara/extras/payara-embedded-all/4.1.1.163.0.1/payara-embedded-all-4.1.1.163.0.1.jar!/org/glassfish/ejb/deployment/descriptor/EjbSessionDescriptor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="78" column="18" selection-start-line="78" selection-start-column="18" selection-end-line="78" selection-end-column="18" />
+          <folding>
+            <element signature="e#3198#3199#0" expanded="true" />
+            <element signature="e#3230#3231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StreamController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="31" column="41" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stream.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="16" selection-start-line="16" selection-end-line="18" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/BeanValConstrainViolationExceptionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/StreamProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="57" selection-start-line="57" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2998#2999#0" expanded="true" />
+            <element signature="e#3430#3431#0" expanded="true" />
+            <element signature="e#3500#3501#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/facade/StreamFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="32" column="38" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#1032#1033#0" expanded="true" />
+            <element signature="e#1083#1084#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/facade/MyFacade.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="18" column="19" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+        <state relative-caret-position="30">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#509#510#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#735#736#0" expanded="true" />
+            <element signature="e#994#995#0" expanded="true" />
+            <element signature="e#1033#1034#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/StaticPersonProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="366">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PersonRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="66" column="25" selection-start-line="66" selection-start-column="25" selection-end-line="66" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml">
-      <provider editor-type-id="com.intellij.javaee.oss.glassfish.editor.GlassfishWebRootProvider" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/error.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/CreatePersonController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        <state relative-caret-position="298">
+          <caret line="53" selection-start-line="53" selection-end-line="55" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1112,21 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/controller/AuthenticationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HelloController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-174">
+          <caret line="42" column="32" lean-forward="true" selection-start-line="42" selection-start-column="32" selection-end-line="42" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -1137,103 +1247,85 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTRememberMeIdentityStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/react/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/react/like_button.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/SongRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/PersonRest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/PersonRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="33" column="96" selection-start-line="33" selection-start-column="96" selection-end-line="33" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2703#2704#0" expanded="true" />
-            <element signature="e#2748#2749#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/JaxRsActivator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="1" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/logic/CorsFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/second.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/stream.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="32" selection-start-line="32" selection-end-line="36" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/person.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/indexx.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/interceptor/MyInterceptor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="47" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/8.0.1-b5/javaee-api-8.0.1-b5.jar!/javax/security/enterprise/credential/UsernamePasswordCredential.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/UsernamePasswordTwoFactorCredential.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#639#640#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+            <element signature="e#717#718#0" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#738#739#0" expanded="true" />
+            <element signature="e#769#770#0" expanded="true" />
+            <element signature="e#796#797#0" expanded="true" />
+            <element signature="e#660#661#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/JWTAuthenticationMechanism.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="85" column="45" selection-start-line="85" selection-start-column="45" selection-end-line="85" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/security/AuthenticationIdentityStore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="102" column="143" selection-start-line="102" selection-start-column="143" selection-end-line="102" selection-end-column="143" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/StreamRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-465">
+          <caret line="20" selection-start-line="20" selection-end-line="21" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="e#1467#1468#0" expanded="true" />
+            <element signature="e#1549#1550#0" expanded="true" />
+            <element signature="e#1589#1590#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/WebsocketController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="82" column="71" selection-start-line="82" selection-start-column="71" selection-end-line="82" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#1491#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#1202#1728#0" expanded="true" />
+            <element signature="e#1727#1728#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1309,7 +1401,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

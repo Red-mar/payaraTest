@@ -1,0 +1,19 @@
+version: "3.1"
+services:
+
+ db:
+   image: postgres:11.2
+   environment:
+     POSTGRES_PASSWORD: adminadmin
+     POSTGRES_USER: payara
+     POSTGRES_DB: test
+
+ my-payara-project:
+   image: payara-t
+   ports:
+     - "8080:8080"
+     - "4848:4848"
+     - "8181:8181"
+ #  volumes:
+#     - ~/IdeaProjects/payaraArtifactr3/target:/opt/payara/deployments
+ #    - ~/Documents/school/payara5/:/opt/payara/appserver/

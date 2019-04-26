@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="libshout-java-2.2.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Documents/git/libshout-java/target/libshout-java-2.2.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/libshout-java-2.2.2.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

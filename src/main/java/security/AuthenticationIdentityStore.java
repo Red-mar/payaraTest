@@ -34,19 +34,22 @@
  * and therefore, elected the GPL Version 2 license, then the option applies
  * only if the new code is made subject to such option by the copyright
  * holder.
- *//*
+ */
 
 package security;
 
+import com.warrenstrange.googleauth.GoogleAuthenticator;
 import model.facade.MyFacade;
 
 import static java.util.Collections.singleton;
 
+import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.logging.Logger;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
@@ -57,35 +60,48 @@ import static javax.security.enterprise.identitystore.CredentialValidationResult
 import static javax.security.enterprise.identitystore.CredentialValidationResult.NOT_VALIDATED_RESULT;
 import javax.security.enterprise.identitystore.IdentityStore;
 import javax.security.enterprise.identitystore.IdentityStore.ValidationType;
+import javax.xml.bind.DatatypeConverter;
+
 import static javax.security.enterprise.identitystore.IdentityStore.ValidationType.VALIDATE;
 
 @RequestScoped
 public class AuthenticationIdentityStore implements IdentityStore {
+
+    private static final Logger LOGGER = Logger.getLogger(JWTAuthenticationMechanism.class.getName());
 
     @Inject
     MyFacade facade;
 
     @Override
     public CredentialValidationResult validate(Credential credential) {
-        CredentialValidationResult result;
+        CredentialValidationResult result = NOT_VALIDATED_RESULT;
 
-        if (credential instanceof UsernamePasswordCredential) {
-            UsernamePasswordCredential usernamePassword = (UsernamePasswordCredential) credential;
-            String expectedPW = facade.getExpectedPassword(usernamePassword.getCaller());
+        if (credential instanceof UsernamePasswordTwoFactorCredential) {
+            UsernamePasswordTwoFactorCredential usernamePassword = (UsernamePasswordTwoFactorCredential) credential;
+            String expectedPW = facade.getExpectedPassword(usernamePassword.getUser());
+            String givenPW = "";
 
-            MessageDigest messageDigest = null;
             try {
-                messageDigest = MessageDigest.getInstance("SHA-256");
+                MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+                byte[] hash = messageDigest.digest(usernamePassword.getPasswordAsString().getBytes(StandardCharsets.UTF_8));
+                givenPW = DatatypeConverter.printBase64Binary(hash);
             } catch (NoSuchAlgorithmException e) {
                 e.printStackTrace();
             }
-            messageDigest.update(usernamePassword.getPasswordAsString().getBytes());
-            String encryptedString = new String(messageDigest.digest());
 
-            if (expectedPW != null && expectedPW.equals(encryptedString)) {
-                result = new CredentialValidationResult(usernamePassword.getCaller());
-            } else {
-                result = INVALID_RESULT;
+            LOGGER.info("exp = " + expectedPW + "  enc = " + givenPW);
+
+            if (expectedPW != null && expectedPW.equals(givenPW) && !facade.getPersonByName(usernamePassword.getUser()).isUsing2FA()) {
+                result = new CredentialValidationResult(usernamePassword.getUser());
+                return result;
+            }
+
+            // TFA
+            GoogleAuthenticator auth = new GoogleAuthenticator();
+
+            LOGGER.info("caller = " + usernamePassword.getUser() + ", code = " + usernamePassword.getPasswordAsString());
+            if( auth.authorize(facade.getPersonByName(usernamePassword.getUser()).getSecret(), Integer.parseInt(usernamePassword.getTwofactor()))) {
+                result = new CredentialValidationResult(usernamePassword.getUser());
             }
         } else {
             result = NOT_VALIDATED_RESULT;
@@ -98,5 +114,3 @@ public class AuthenticationIdentityStore implements IdentityStore {
         return singleton(VALIDATE);
     }
 }
-
-*/

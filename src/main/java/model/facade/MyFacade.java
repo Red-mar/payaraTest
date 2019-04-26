@@ -39,11 +39,17 @@ public class MyFacade {
         return set;
     }
 
-    public void createPerson(String name, String username, String password, String role) { pp.createPerson(name, username, password, role);}
+    public void createPerson(PersonDO person) {
+        pp.createPerson(person);
+    }
 
     public List<PersonDO> getAllPersons() { return pp.getAllPerson();}
 
     public boolean deletePersonById(int id) {
         return pp.deletePersonById(id);
+    }
+
+    public boolean updatePerson(PersonDO person) {
+        return pp.updatePerson(person);
     }
 }

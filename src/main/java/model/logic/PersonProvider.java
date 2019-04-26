@@ -7,9 +7,9 @@ import java.util.List;
 @Remote
 public interface PersonProvider {
     PersonDO getPersonById(int id);
-    PersonDO getPersonByName(String name);
     PersonDO getPersonByUsername(String username);
-    void createPerson(String name, String username, String password, String role);
+    void createPerson(PersonDO person);
     List<PersonDO> getAllPerson();
     boolean deletePersonById(int id);
+    boolean updatePerson(PersonDO person);
 }

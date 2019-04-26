@@ -34,7 +34,7 @@
  * and therefore, elected the GPL Version 2 license, then the option applies
  * only if the new code is made subject to such option by the copyright
  * holder.
- *//*
+ */
 
 package security;
 
@@ -67,14 +67,6 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
 
     private static final Logger LOGGER = Logger.getLogger(JWTAuthenticationMechanism.class.getName());
 
-    */
-/**
-     * Access to the
-     * IdentityStore(AuthenticationIdentityStore,AuthorizationIdentityStore) is
-     * abstracted by the IdentityStoreHandler to allow for multiple identity
-     * stores to logically act as a single IdentityStore
-     *//*
-
     @Inject
     private IdentityStoreHandler identityStoreHandler;
 
@@ -90,12 +82,13 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
         // putting the password in a request query parameter is highly insecure
         String name = request.getParameter("name");
         String password = request.getParameter("password");
+        String tfa = request.getParameter("code");
         String token = extractToken(context);
 
         if (name != null && password != null) {
             LOGGER.log(Level.INFO, "credentials : {0}, {1}", new String[]{name, password});
             // validation of the credential using the identity store
-            CredentialValidationResult result = identityStoreHandler.validate(new UsernamePasswordCredential(name, password));
+            CredentialValidationResult result = identityStoreHandler.validate(new UsernamePasswordTwoFactorCredential(name, password, tfa));
             if (result.getStatus() == CredentialValidationResult.Status.VALID) {
                 // Communicate the details of the authenticated user to the container and return SUCCESS.
                 return createToken(result, context);
@@ -115,16 +108,6 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
         return context.doNothing();
     }
 
-    */
-/**
-     * To validate the JWT token e.g Signature check, JWT claims
-     * check(expiration) etc
-     *
-     * @param token The JWT access tokens
-     * @param context
-     * @return the AuthenticationStatus to notify the container
-     *//*
-
     private AuthenticationStatus validateToken(String token, HttpMessageContext context) {
         try {
             if (tokenProvider.validateToken(token)) {
@@ -139,16 +122,6 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
         }
     }
 
-    */
-/**
-     * Create the JWT using CredentialValidationResult received from
-     * IdentityStoreHandler
-     *
-     * @param result the result from validation of UsernamePasswordCredential
-     * @param context
-     * @return the AuthenticationStatus to notify the container
-     *//*
-
     private AuthenticationStatus createToken(CredentialValidationResult result, HttpMessageContext context) {
         if (!isRememberMe(context)) {
             String jwt = tokenProvider.createToken(result.getCallerPrincipal().getName(), result.getCallerGroups(), false);
@@ -156,14 +129,6 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
         }
         return context.notifyContainerAboutLogin(result.getCallerPrincipal(), result.getCallerGroups());
     }
-
-    */
-/**
-     * To extract the JWT from Authorization HTTP header
-     *
-     * @param context
-     * @return The JWT access tokens
-     *//*
 
     private String extractToken(HttpMessageContext context) {
         String authorizationHeader = context.getRequest().getHeader(AUTHORIZATION_HEADER);
@@ -174,18 +139,8 @@ public class JWTAuthenticationMechanism implements HttpAuthenticationMechanism {
         return null;
     }
 
-    */
-/**
-     * this function invoked using RememberMe.isRememberMeExpression EL
-     * expression
-     *
-     * @param context
-     * @return The remember me flag
-     *//*
-
     public Boolean isRememberMe(HttpMessageContext context) {
         return Boolean.valueOf(context.getRequest().getParameter("rememberme"));
     }
 
 }
-*/

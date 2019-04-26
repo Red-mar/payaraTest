@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.logging.Logger;
 
 @Stateless
 public class StreamProvider {
@@ -21,6 +22,7 @@ public class StreamProvider {
     private Thread streamingThread = new Thread();
     private ArrayList<SongDO> songQueue = new ArrayList<>();
 
+    private static final Logger LOGGER = Logger.getLogger(StreamProvider.class.getName());
 
     public void Initialize(String host, int port) {
         try {
@@ -55,7 +57,11 @@ public class StreamProvider {
         streamingThread = new Thread() {
             public void run() {
                 try {
-                    iceCast.open();
+                    try {
+                        iceCast.open();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
                     while (songQueue.size() > 0) {
 
                         System.out.println("Starting stream of song\n" + songQueue.get(0).getUrl() + "\n" + songQueue.size());
@@ -118,6 +124,8 @@ public class StreamProvider {
 
 
     public void AddSongToQueue(SongDO song) {
+
         songQueue.add(song);
+        LOGGER.info(song.getUrl());
     }
 }

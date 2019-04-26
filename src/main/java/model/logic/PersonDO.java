@@ -1,7 +1,5 @@
 package model.logic;
 
-import com.sun.xml.internal.ws.developer.Serialization;
-
 import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -26,15 +24,21 @@ public class PersonDO {
     private String password;
     private boolean isDeleted;
 
+    private boolean using2FA;
+    private String secret;
+
     private String role;
 
-    public PersonDO(int id, String name, String username, String password, String role, boolean isDeleted) {
+    public PersonDO(int id, String name, String username, String password, String role,
+                    boolean isDeleted, boolean using2FA, String secret) {
         this.id = id;
         this.name = name;
         this.username = username;
         this.password = password;
         this.role = role;
         this.isDeleted = isDeleted;
+        this.using2FA = using2FA;
+        this.secret = secret;
     }
 
     public PersonDO() {}
@@ -85,6 +89,22 @@ public class PersonDO {
 
     public void setDeleted(boolean deleted) {
         this.isDeleted = deleted;
+    }
+
+    public String getSecret() {
+        return secret;
+    }
+
+    public void setSecret(String secret) {
+        this.secret = secret;
+    }
+
+    public void setUsing2FA(boolean using2FA) {
+        this.using2FA = using2FA;
+    }
+
+    public boolean isUsing2FA() {
+        return using2FA;
     }
 }
 

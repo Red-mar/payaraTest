@@ -45,25 +45,16 @@ public class PersonRestController {
     }
 
     @POST
-    @Path("/create")
+    @Path("/register")
     @Produces("application/json")
     @PermitAll
-    public Response createPerson(@FormParam("name") String name,
-                                 @FormParam("username") String username,
-                                 @FormParam("password") String password,
-                                 @FormParam("role") String role) {
-        facade.createPerson(name, username, password, role);
-
-        // Cannot create admin if you are not logged in as admin.
-        if( ! securityContext.isCallerInRole(ADMIN) && role.equals(ADMIN) ) {
-            return Response.status(Response.Status.UNAUTHORIZED).build();
-        }
+    public Response createPerson(PersonDO person) {
+        facade.createPerson(person);
 
         JsonObject result = Json.createObjectBuilder()
-                .add("name", name)
-                .add("username", username)
-                .add("role", role)
+                .add("message", person.getName() + " created!")
                 .build();
+
         return Response.ok(result).build();
     }
 
@@ -86,6 +77,7 @@ public class PersonRestController {
 
     @GET
     @Produces("application/json")
+    @RolesAllowed({ADMIN})
     public List<PersonDO> getPersons() {
         return facade.getAllPersons();
     }
