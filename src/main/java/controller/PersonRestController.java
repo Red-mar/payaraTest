@@ -13,7 +13,7 @@ import javax.ws.rs.*;
 import javax.ws.rs.container.ContainerRequestContext;
 import javax.ws.rs.container.ContainerResponseContext;
 import javax.ws.rs.container.ContainerResponseFilter;
-import javax.ws.rs.core.Response;
+import javax.ws.rs.core.*;
 import javax.ws.rs.ext.Provider;
 import java.io.IOException;
 import java.util.List;
@@ -48,14 +48,18 @@ public class PersonRestController {
     @Path("/register")
     @Produces("application/json")
     @PermitAll
-    public Response createPerson(PersonDO person) {
+    public Response createPerson(PersonDO person, @Context UriInfo uriInfo) {
         facade.createPerson(person);
+
+        Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder())
+                .rel("self").build();
 
         JsonObject result = Json.createObjectBuilder()
                 .add("message", person.getName() + " created!")
                 .build();
 
-        return Response.ok(result).build();
+        return Response.ok(result)
+                .links(self).build();
     }
 
     @POST
@@ -81,5 +85,4 @@ public class PersonRestController {
     public List<PersonDO> getPersons() {
         return facade.getAllPersons();
     }
-
 }
