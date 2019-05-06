@@ -43,24 +43,6 @@ public class WebsocketController {
     public void onOpen(Session session) {
         logger.log(Level.INFO, "Opening Session {0}", session.getId());
         set.add(session);
-        queueThread = new Thread() {
-            public void run() {
-                while (true) {
-                    try {
-                        Thread.sleep(2000);
-
-                        Gson gson = new Gson();
-                        String queueJson = gson.toJson(facade.GetQueue());
-
-                        session.getBasicRemote().sendText(queueJson);
-                    } catch( Exception e) {
-                        e.printStackTrace();
-                        break;
-                    }
-                }
-            }
-        };
-        queueThread.start();
     }
 
     @OnClose
@@ -80,12 +62,25 @@ public class WebsocketController {
         Gson gson = new Gson();
         JsonObject jobj = gson.fromJson(message, JsonObject.class);
         try {
-            if (jobj.has("op") && jobj.get("op").getAsString().equals(""))
+            if (jobj.has("op") && jobj.get("op").getAsString().equals("add")) {
+                for (Session s: set) {
+                    updateSession(s);
+                }
+            }
             logger.log(Level.INFO, "Received Message on Session {0}", session.getId());
-            //session.getBasicRemote().sendText(message);
-        } catch (IOException ex) {
+        } catch (Exception ex) {
             logger.log(Level.SEVERE, null, ex);
         }
     }
 
+    private void updateSession(Session session) {
+        try {
+            Gson gson = new Gson();
+            String queueJson = gson.toJson(facade.GetQueue());
+            session.getBasicRemote().sendText(queueJson);
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        }
+    }
 }
