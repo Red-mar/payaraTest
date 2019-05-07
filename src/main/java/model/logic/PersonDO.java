@@ -1,6 +1,9 @@
 package model.logic;
 
+import model.BeanValConstrainViolationExceptionMapper;
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
@@ -18,15 +21,21 @@ public class PersonDO {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+    @Size(min = 2, max = 50, message =  "Name must be between 2 and 50.")
     private String name;
+    @Size(min = 2, max = 50, message = "Username must be between 2 and 50.")
+    @NotNull
     @Column(unique = true)
     private String username;
+    @Size(min = 6, message = "Password must be at least 6 characters.")
+    @NotNull
     private String password;
+    @NotNull
     private boolean isDeleted;
 
     private boolean using2FA;
     private String secret;
-
+    
     private String role;
 
     public PersonDO(int id, String name, String username, String password, String role,
