@@ -33,8 +33,9 @@ public class StaticPersonProvider implements PersonProvider {
     }
 
     @Override
-    public void createPerson(
+    public PersonDO createPerson(
             PersonDO person) {
+        PersonDO result = null;
         try {
             MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
             byte[] hash = messageDigest.digest(person.getPassword().getBytes(StandardCharsets.UTF_8));
@@ -42,10 +43,13 @@ public class StaticPersonProvider implements PersonProvider {
 
             person.setPassword(encoded);
             em.persist(person);
+
+            // Check
+            result = getPersonByUsername(person.getUsername());
         } catch (NoSuchAlgorithmException e) {
             e.printStackTrace();
         }
-        
+        return result;
     }
 
     @Override

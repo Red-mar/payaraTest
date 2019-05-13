@@ -49,13 +49,14 @@ public class PersonRestController {
     @Produces("application/json")
     @PermitAll
     public Response createPerson(PersonDO person, @Context UriInfo uriInfo) {
-        facade.createPerson(person);
+        PersonDO personResult = facade.createPerson(person);
 
         Link self = Link.fromUriBuilder(uriInfo.getAbsolutePathBuilder())
                 .rel("self").build();
 
         JsonObject result = Json.createObjectBuilder()
                 .add("message", person.getName() + " created!")
+                .add("Links", uriInfo.getBaseUri().toString() + "/person/" + personResult.getId())
                 .build();
 
         return Response.ok(result)

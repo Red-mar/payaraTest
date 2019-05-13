@@ -8,7 +8,7 @@ import java.util.List;
 public interface PersonProvider {
     PersonDO getPersonById(int id);
     PersonDO getPersonByUsername(String username);
-    void createPerson(PersonDO person);
+    PersonDO createPerson(PersonDO person);
     List<PersonDO> getAllPerson();
     boolean deletePersonById(int id);
     boolean updatePerson(PersonDO person);

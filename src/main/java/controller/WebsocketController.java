@@ -11,6 +11,9 @@ import model.facade.StreamFacade;
 import sun.util.calendar.BaseCalendar;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -35,21 +38,18 @@ public class WebsocketController {
 
     private static final Logger logger = Logger.getLogger(WebsocketController.class.getName());
 
-    Set<Session> set;
-
-    private Thread queueThread;
+    private static List<Session> list = new ArrayList<>();
 
     @OnOpen
     public void onOpen(Session session) {
         logger.log(Level.INFO, "Opening Session {0}", session.getId());
-        set.add(session);
+        list.add(session);
     }
 
     @OnClose
     public void onClose(Session session) {
-        set.remove(session);
+        list.remove(session);
         logger.log(Level.INFO, "Closing Session {0}", session.getId());
-        queueThread.stop();
     }
 
     @OnError
@@ -60,23 +60,24 @@ public class WebsocketController {
     @OnMessage
     public void onMessage(String message, Session session) {
         Gson gson = new Gson();
-        JsonObject jobj = gson.fromJson(message, JsonObject.class);
+        logger.log(Level.INFO,"got message");
         try {
-            if (jobj.has("op") && jobj.get("op").getAsString().equals("add")) {
-                for (Session s: set) {
-                    updateSession(s);
-                }
+            for (Session s: list) {
+                logger.log(Level.INFO,"Update Session {0}", s.getId());
+                updateSession(s);
             }
             logger.log(Level.INFO, "Received Message on Session {0}", session.getId());
         } catch (Exception ex) {
-            logger.log(Level.SEVERE, null, ex);
+            logger.log(Level.SEVERE, "{0}", ex);
         }
     }
 
     private void updateSession(Session session) {
+        logger.log(Level.INFO, "Updating {0}]", session.getId());
         try {
             Gson gson = new Gson();
             String queueJson = gson.toJson(facade.GetQueue());
+            logger.log(Level.INFO, "Sending {0}", queueJson);
             session.getBasicRemote().sendText(queueJson);
 
         } catch (IOException ex) {

@@ -39,8 +39,8 @@ public class MyFacade {
         return set;
     }
 
-    public void createPerson(PersonDO person) {
-        pp.createPerson(person);
+    public PersonDO createPerson(PersonDO person) {
+        return pp.createPerson(person);
     }
 
     public List<PersonDO> getAllPersons() { return pp.getAllPerson();}
